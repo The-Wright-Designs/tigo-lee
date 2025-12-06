@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-
+import { Livvic } from "next/font/google";
 import Footer from "./_components/navigation/footer/footer";
 import HeaderWrapper from "./_components/navigation/header/header-wrapper";
 
 import "./_styles/globals.css";
+
+const livvicSansSerif = Livvic({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  variable: "--font-livvic",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tigolee.co.za"),
@@ -49,7 +55,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body>
+      <body
+        className={`${livvicSansSerif.variable} antialiased font-livvic bg-white`}
+      >
         <HeaderWrapper />
         {children}
         <Footer />

@@ -1,8 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --color-*: initial;
+  --color-black: #202020;
+  --color-white: #FFFFFF;
+  --color-champagne: #D8B988;
+  --color-link-blue: #0000FF;
+  --color-pink: #FBF5F3;
+  --color-transparent: transparent;
+
+  --text-*: initial;
+  --text-paragraph: 1rem;
+  --text-paragraph--line-height: 20px;
+  --text-paragraph--letter-spacing: 0.01rem;
+  --text-paragraph--font-weight: 300;
+  --text-subheading: 1rem;
+  --text-subheading--letter-spacing: 0.02rem;
+  --text-subheading--font-weight: 600;
+  --text-heading: 2.25rem;
+  --text-heading--letter-spacing: 0.0225rem;
+  --text-heading--font-weight: 300;
+
+  --breakpoint-*: initial;
+  --breakpoint-phone: 425px;
+  --breakpoint-tablet: 800px;
+  --breakpoint-desktop: 1280px;
+
+  --spacing-15: 60px;
+
+  --font-family-livvic: "Livvic", Tahoma, sans-serif;
+}
 
 @layer base {
   @font-face {
