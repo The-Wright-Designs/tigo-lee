@@ -16,6 +16,10 @@
     "url": "/vendors"
   },
   {
+    "title": "Venues",
+    "url": "/vendors/#venues"
+  },
+  {
     "title": "Contact",
     "url": "/#contact"
   }

@@ -79,11 +79,6 @@
       "alt": "Besters' Bridal Boutique"
     },
     {
-      "url": "https://www.facebook.com/AliciaBoukes/",
-      "image": "/images/vendors/infinite-beauty-by-alicia.jpeg",
-      "alt": "Infinte Beauty by Alicia"
-    },
-    {
       "url": "https://www.houseofgather.info",
       "image": "/images/vendors/house-of-gather.jpg",
       "alt": "House of Gather"
@@ -92,6 +87,18 @@
       "url": "https://www.facebook.com/people/Lashed-and-Beautiful/100087239230815/",
       "image": "/images/vendors/lashed-and-beautiful.jpeg",
       "alt": "Lashed and Beautiful by Jamie Leigh Ahrense"
+    }
+  ],
+  "venueList": [
+    {
+      "url": "https://bellamanga.co.za/",
+      "image": "/images/venues/bellamanga-country-escape-logo.jpg",
+      "alt": "Bellamanga Country Escape"
+    },
+    {
+      "url": "https://www.plettenvalewines.co.za/the-plettenvale",
+      "image": "/images/venues/plettenvale_logo.avif",
+      "alt": "The Plettenvale"
     }
   ],
   "contact": {

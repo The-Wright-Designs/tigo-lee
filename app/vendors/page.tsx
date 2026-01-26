@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Vendors - Tigo-Lee Professional Make-up Artist",
 };
 
-const { vendorList } = data;
+const { vendorList, venueList } = data;
 
 const Vendors = () => {
   return (
@@ -42,6 +42,32 @@ const Vendors = () => {
         </ul>
         <div className="tablet:max-w-[250px] mx-auto mt-10">
           <Button url="/#contact">Get In Touch</Button>
+        </div>
+        <hr className="text-black/25 w-full my-10" />
+        <div id="venues" className="scroll-mt-16">
+          <h2 className="text-center mb-10">Venues</h2>
+          <ul className="flex flex-wrap items-center justify-center gap-10">
+            {venueList.map(({ image, url, alt }, index) => (
+              <li key={index}>
+                <Link
+                  className="desktop:hover:opacity-80 ease-in-out duration-300"
+                  href={url}
+                  target="_blank"
+                  aria-label={`Visit ${alt}`}
+                >
+                  <Image
+                    src={image}
+                    alt={alt}
+                    width={300}
+                    height={300}
+                    className="aspect-square max-w-[300px] h-auto desktop:max-w-[200px] object-contain"
+                    sizes="(max-width: 425px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                    loading={index < 2 ? "eager" : "lazy"}
+                  />
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </main>
     </ContentWrapper>

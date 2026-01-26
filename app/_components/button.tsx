@@ -23,13 +23,13 @@ const buttonStyles = ({
   pending,
 }: Props & { pending?: boolean }) =>
   classNames(
-    `flex gap-3 bg-champagne w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 rounded-lg ${cssClasses}`,
+    `flex gap-3 bg-champagne w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 rounded-lg desktop:cursor-pointer ${cssClasses}`,
     {
       "bg-champagne cursor-not-allowed": disabled || pending,
       "desktop:hover:bg-white desktop:hover:text-black": !disabled || !pending,
       "border-4 border-white": strokeWhite,
       "border-4 border-champagne": !strokeWhite,
-    }
+    },
   );
 
 const Button = ({

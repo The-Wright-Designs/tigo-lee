@@ -14,13 +14,13 @@ export default function Home() {
     <div>
       <HeroComponent />
       <div
-        className="-translate-y-16 tablet:-translate-y-16 desktop:-translate-y-20"
+        className="scroll-mt-16 tablet:scroll-mt-16 desktop:scroll-mt-20"
         id="about"
       ></div>
       <AboutComponent />
       <GalleryComponent />
       <div
-        className="-translate-y-16 tablet:-translate-y-20 desktop:-translate-y-28"
+        className="scroll-mt-16 tablet:scroll-mt-16 desktop:scroll-mt-20"
         id="contact"
       ></div>
       <ContactComponent />
