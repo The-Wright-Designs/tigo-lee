@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import classNames from "classnames";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 import React from "react";
-import Button from "../_components/button";
+import Button from "@/_components/button";
 
 export const metadata: Metadata = {
   title: "Portfolio - Tigo-Lee Professional Make-up Artist",

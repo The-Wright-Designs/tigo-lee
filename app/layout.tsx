@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
-import Footer from "./_components/navigation/footer/footer";
-import HeaderWrapper from "./_components/navigation/header/header-wrapper";
+import Footer from "@/_components/navigation/footer/footer";
+import HeaderWrapper from "@/_components/navigation/header/header-wrapper";
 
-import "./_styles/globals.css";
+import "@/_styles/globals.css";
 
 const livvicSansSerif = Livvic({
   subsets: ["latin"],

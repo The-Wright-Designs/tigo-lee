@@ -2,10 +2,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import ContentWrapper from "../_utils/content-wrapper";
-import Button from "../_components/button";
+import ContentWrapper from "@/_utils/content-wrapper";
+import Button from "@/_components/button";
 
-import data from "@/app/_data/general-data.json";
+import data from "@/_data/general-data.json";
 
 export const metadata: Metadata = {
   title: "Vendors - Tigo-Lee Professional Make-up Artist",
