@@ -41,7 +41,7 @@ const HeroSlider = ({ cssClasses, data }: Props) => {
           <Image
             src={slide}
             alt={`Tigo-Lee Professional Make-up Artist - Image ${index + 1}`}
-            className="rounded-none w-full aspect-video h-full object-cover"
+            className="rounded-none h-[650px] aspect-video w-full tablet:h-[550px] object-cover"
             width={1280}
             height={700}
             loading={index < 1 ? "eager" : "lazy"}
